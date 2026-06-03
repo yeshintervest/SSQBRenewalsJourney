@@ -1,0 +1,31 @@
+name: Weekly journey screenshots
+
+on:
+  schedule:
+    - cron: "0 6 * * 3"   # 06:00 UTC every Wednesday
+  workflow_dispatch: {}    # lets you run it on demand
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Capture screenshots
+        run: python capture.py
+      - name: Save screenshots back to the repo
+        run: |
+          git config user.name "screenshot-bot"
+          git config user.email "screenshot-bot@users.noreply.github.com"
+          git add screenshots
+          git commit -m "Weekly screenshots $(date +%F)" || echo "nothing new"
+          git push
