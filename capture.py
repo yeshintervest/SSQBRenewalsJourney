@@ -21,13 +21,20 @@ from playwright.sync_api import sync_playwright
 # --------------------------------------------------------------------------
 # Settings (override with environment variables)
 # --------------------------------------------------------------------------
-QUOTE_START_URL   = os.environ.get("QUOTE_START_URL", "https://example.com/quote")
+QUOTE_START_URL   = os.environ.get("QUOTE_START_URL", "https://quote.staysure.co.uk/")
 RENEWAL_LOGIN_URL = os.environ.get("RENEWAL_LOGIN_URL", "https://example.com/login")
 USERNAME          = os.environ.get("PORTAL_USERNAME", "")
 PASSWORD          = os.environ.get("PORTAL_PASSWORD", "")
 
+# Travel start date is generated ~30 days ahead every run, so it never
+# becomes a past (invalid) date. Format matches what the site expects.
+TRAVEL_START = (dt.date.today() + dt.timedelta(days=30)).strftime("%d/%m/%Y")
+
 VIEWPORT    = {"width": 1440, "height": 900}
 OUTPUT_ROOT = Path("screenshots")
+
+# Set HEADED=1 to watch the browser work (useful for debugging a stuck step).
+HEADED = os.environ.get("HEADED") == "1"
 RUN_DATE    = dt.date.today().isoformat()
 RUN_DIR     = OUTPUT_ROOT / RUN_DATE
 
@@ -50,9 +57,10 @@ class Shotter:
         filename = f"{self.n:02d}_{section}_{slug}.png"
         # let the page settle; don't hang forever on chatty sites
         try:
-            self.page.wait_for_load_state("networkidle", timeout=5000)
+            self.page.wait_for_load_state("networkidle", timeout=4000)
         except Exception:
             pass
+        self.page.wait_for_timeout(800)
         self.page.screenshot(path=str(self.run_dir / filename), full_page=True)
         self.manifest.append({
             "order": self.n,
@@ -65,35 +73,121 @@ class Shotter:
         print(f"  captured {filename}")
 
 
+def goto_with_retry(page, url, attempts=3, pause_ms=6000):
+    """Open a URL, retrying a few times if the connection is reset/refused."""
+    for i in range(1, attempts + 1):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            return
+        except Exception as e:
+            print(f"  connection attempt {i} of {attempts} failed: {e}")
+            if i == attempts:
+                raise
+            page.wait_for_timeout(pause_ms)
+
+
 # --------------------------------------------------------------------------
 # THE PUBLIC QUOTE & BUY JOURNEY  (no login)
+# Steps recorded from the live site; a screenshot is taken on arrival at
+# each page (before filling it in), so you see the page as a customer does.
 # --------------------------------------------------------------------------
 def capture_quote_journey(shotter):
     page = shotter.page
-    page.goto(QUOTE_START_URL, wait_until="domcontentloaded")
-    shotter.shot("Landing page", "quote")
 
-    # ----------------------------------------------------------------------
-    # TODO: replace the block below with YOUR real journey.
-    # The pattern is always: act -> screenshot. One shot() per page.
-    # Tip: run `playwright codegen <your-url>` to record clicks/typing and
-    # have the selectors written for you, then paste them here.
-    #
-    # page.fill("#postcode", "SW1A 1AA")
-    # page.click("button:has-text('Get a quote')")
-    # shotter.shot("Your details", "quote")
-    #
-    # page.fill("#dob", "01/01/1990")
-    # page.click("button:has-text('Continue')")
-    # shotter.shot("Cover options", "quote")
-    #
-    # page.click("text=Buy now")
-    # shotter.shot("Payment", "quote")
-    # ----------------------------------------------------------------------
+    # Page 1 - Landing / trip type
+    goto_with_retry(page, QUOTE_START_URL)
+    page.get_by_role("button", name="Accept All Cookies").click()
+    shotter.shot("Cover type", "quote")
+    page.get_by_test_id("cover-type-buttons-group-2").click()
+    shotter.shot("Cover type filled", "quote")
+    page.get_by_test_id("cover-type-footer-page-submit-button").click()
+
+    # Page 2 - Travelling to
+    shotter.shot("Travelling to", "quote")
+    page.get_by_test_id("to-location-buttons-group-3").click()
+    page.get_by_test_id("worldwide-location-buttons-group-2").click()
+    shotter.shot("Travelling to filled", "quote")
+    page.get_by_test_id("travelling-to-page-submit-button").click()
+
+    # Page 3 - Cruise question
+    shotter.shot("Cruise", "quote")
+    page.get_by_test_id("cruise-buttons-group-2").click()
+    shotter.shot("Cruise filled", "quote")
+    page.get_by_test_id("cruise-page-submit-button").click()
+
+    # Page 4 - Travel dates
+    shotter.shot("Travel dates", "quote")
+    page.get_by_role("textbox", name="From").click()
+    page.get_by_role("textbox", name="From").fill(TRAVEL_START)
+    shotter.shot("Travel dates filled", "quote")
+    page.get_by_test_id("travel-dates-page-submit-button").click()
+
+    # Page 5 - Cover for
+    shotter.shot("Cover for", "quote")
+    page.get_by_test_id("party-type-buttons-group-INDIVIDUAL").click()
+    shotter.shot("Cover for filled", "quote")
+    page.get_by_test_id("cover-for-footer-page-submit-button").click()
+
+    # Page 6 - Organiser
+    shotter.shot("Organiser", "quote")
+    page.get_by_test_id("personal-status-dropdown").click()
+    page.get_by_role("option", name="Ms", exact=True).click()   # exact=True so it matches one option only
+    page.get_by_test_id("first-name-organiser-input").click()
+    page.get_by_test_id("first-name-organiser-input").fill("test")
+    page.get_by_test_id("last-name-organiser-input").click()
+    page.get_by_test_id("last-name-organiser-input").fill("test")
+    page.get_by_test_id("scrollableInput-input").click()
+    page.get_by_test_id("scrollableInput-input").fill("midsummer")
+    page.get_by_role("button", name="Midsummer House, Forden").click()
+    page.locator("#scrollableInput").click()
+    page.get_by_test_id("day-input").fill("09")
+    page.get_by_test_id("month-input").fill("09")
+    page.get_by_test_id("year-input").fill("1990")
+    page.get_by_test_id("organiser-main-buttons-group-1").click()
+    page.get_by_test_id("organiser-buttons-group-2").click()
+    shotter.shot("Organiser filled", "quote")
+    page.get_by_test_id("organiser-page-submit-button").click()
+
+    # Page 7 - Medical confirmation
+    shotter.shot("Medical confirmation", "quote")
+    page.get_by_test_id("medical-confirmation-buttons-group-2").click()
+    page.get_by_test_id("undiagnosed-medical-confirmation-buttons-group-2").click()
+    shotter.shot("Medical confirmation filled", "quote")
+    page.get_by_test_id("medical-confirmation-page-submit-button").click()
+
+    # Page 8 - Medical treatments
+    shotter.shot("Medical treatments", "quote")
+    page.get_by_test_id("medical-treatments-buttons-group-2").click()
+    shotter.shot("Medical treatments filled", "quote")
+    page.get_by_test_id("medical-treatments-page-submit-button").click()
+
+    # Page 9 - Contact details
+    shotter.shot("Contact details", "quote")
+    # No .click() here: on this page the field labels sit over the inputs and
+    # intercept clicks. fill() types into the field directly, avoiding that.
+    page.get_by_test_id("contact-email-input").fill("test@gmail.com")
+    page.get_by_test_id("contact-mobile-input").fill("03303334444")
+    shotter.shot("Contact details filled", "quote")
+    page.get_by_test_id("contact-details-footer-page-submit-button").click()
+
+    # Page 10 - Quote
+    shotter.shot("Quote", "quote")
+    page.get_by_test_id("cover-level-selection-1-card-select-button").click()
+    page.locator("#toggle-button-label-6").click()
+    shotter.shot("Quote filled", "quote")
+    page.get_by_test_id("quote-submit-button").click()
+
+    # Page 11 - Quote review (nothing to fill here)
+    shotter.shot("Quote review", "quote")
+
+    # The payment screen. Reaching it does NOT buy anything (no card details
+    # are entered). Delete these two lines if you'd rather stop at the review.
+    page.get_by_role("button", name="Pay now").click()
+    shotter.shot("Payment", "quote")
 
 
 # --------------------------------------------------------------------------
-# THE RENEWALS JOURNEY  (requires login)
+# THE RENEWALS JOURNEY  (requires login) - we'll fill this in next
 # --------------------------------------------------------------------------
 def capture_renewals_journey(shotter):
     page = shotter.page
@@ -103,23 +197,7 @@ def capture_renewals_journey(shotter):
 
     page.goto(RENEWAL_LOGIN_URL, wait_until="domcontentloaded")
     shotter.shot("Login page", "renewal")
-
-    # ----------------------------------------------------------------------
-    # TODO: replace these selectors with your real login form, then add a
-    # shot() for each renewals screen you want to capture.
-    #
-    # page.fill("input[name='username']", USERNAME)
-    # page.fill("input[name='password']", PASSWORD)
-    # page.click("button[type='submit']")
-    # page.wait_for_load_state("domcontentloaded")
-    # shotter.shot("Dashboard", "renewal")
-    #
-    # page.click("text=My renewals")
-    # shotter.shot("Renewal summary", "renewal")
-    #
-    # page.click("text=Renew now")
-    # shotter.shot("Renewal quote", "renewal")
-    # ----------------------------------------------------------------------
+    # TODO: record the renewals login + screens the same way, paste here.
 
 
 # --------------------------------------------------------------------------
@@ -206,8 +284,18 @@ def write_master_catalogue():
 def main():
     OUTPUT_ROOT.mkdir(exist_ok=True)
     with sync_playwright() as p:
-        browser = p.chromium.launch()
-        context = browser.new_context(viewport=VIEWPORT)
+        browser = p.chromium.launch(
+            headless=not HEADED,
+            slow_mo=500 if HEADED else 0,  # slow down so you can watch each step
+        )
+        context = browser.new_context(
+            viewport=VIEWPORT,
+            user_agent=(
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            ),
+        )
         page = context.new_page()
         shotter = Shotter(page, RUN_DIR)
 
@@ -216,6 +304,11 @@ def main():
             capture_quote_journey(shotter)
         except Exception as e:
             print(f"  quote journey error: {e}")
+            # capture whatever page we got stuck on, so we can see why
+            try:
+                shotter.shot("STUCK - where it stopped", "quote")
+            except Exception:
+                pass
 
         print("Capturing renewals journey...")
         try:
