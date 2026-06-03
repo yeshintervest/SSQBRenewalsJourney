@@ -3,7 +3,7 @@ name: Weekly journey screenshots
 on:
   schedule:
     - cron: "0 6 * * 3"   # 06:00 UTC every Wednesday
-  workflow_dispatch: {}    # lets you run it on demand
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -20,8 +20,13 @@ jobs:
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
-      - name: Capture screenshots
-        run: python capture.py
+      - name: Capture quote journey
+        run: python quote_journey.py
+      - name: Capture renewals journey
+        env:
+          RENEWAL_USERNAME: ${{ secrets.RENEWAL_USERNAME }}
+          RENEWAL_PASSWORD: ${{ secrets.RENEWAL_PASSWORD }}
+        run: python renewals_journey.py
       - name: Save screenshots back to the repo
         run: |
           git config user.name "screenshot-bot"
