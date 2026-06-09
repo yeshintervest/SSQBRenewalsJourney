@@ -26,13 +26,29 @@ jobs:
         run: |
           pip install -r requirements.txt
           python -m playwright install --with-deps chromium
-      - name: Capture quote journey
-        run: python quote_journey.py
+
+      # --- Quote & Buy journeys (one per variant) ---
+      - name: Capture quote - annual 1 traveller, no medical
+        continue-on-error: true
+        run: python quote_annual_1trav_nonmedical.py
+      - name: Capture quote - single 1 traveller, no medical
+        continue-on-error: true
+        run: python quote_single_1trav_nonmedical.py
+      - name: Capture quote - single 2 travellers, medical
+        continue-on-error: true
+        run: python quote_single_2trav_medical.py
+      - name: Capture quote - annual 2 travellers, medical
+        continue-on-error: true
+        run: python quote_annual_2trav_medical.py
+
+      # --- Renewals journey ---
       - name: Capture renewals journey
+        continue-on-error: true
         env:
           RENEWAL_USERNAME: ${{ secrets.RENEWAL_USERNAME }}
           RENEWAL_PASSWORD: ${{ secrets.RENEWAL_PASSWORD }}
         run: python renewals_journey.py
+
       - name: Save screenshots back to the repo
         if: always()
         run: |
