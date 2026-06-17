@@ -41,6 +41,11 @@ jobs:
         continue-on-error: true
         run: python quote_annual_2trav_medical.py
 
+      # --- Quote & Buy error / decision states ---
+      - name: Capture quote error states
+        continue-on-error: true
+        run: python quote_errors.py
+
       # --- Renewals journey ---
       - name: Capture renewals journey
         continue-on-error: true
