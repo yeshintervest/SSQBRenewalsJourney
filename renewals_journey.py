@@ -1,9 +1,9 @@
 """
 Renewals journey screenshotter (requires login).
 
-Logs in to the account, walks the renewals journey, and screenshots each
-screen. On every page it also reads Optimizely's on-page data layer and flags
-any page the visitor was bucketed into an A/B test for.
+Logs in to the live account, walks the renewals journey exactly as recorded,
+and screenshots each screen. On every page it also reads Optimizely's on-page
+data layer and flags any page the visitor was bucketed into an A/B test for.
 
 Login details are read from environment variables (never hard-coded). Set:
     RENEWAL_USERNAME   your test account username
@@ -24,9 +24,7 @@ from playwright.sync_api import sync_playwright
 # Settings (override with environment variables)
 # --------------------------------------------------------------------------
 SIGNIN_URL = os.environ.get("RENEWAL_SIGNIN_URL",
-                            "https://myaccount.staysure.uat.staysuregroup.com/signin")
-REVIEW_URL = os.environ.get("RENEWAL_REVIEW_URL",
-                            "https://renewal-public.staysure.uat.staysuregroup.com/review/")
+                            "https://my.staysure.co.uk/signin")
 
 # Login credentials - provided at run time, NOT stored in this file.
 USERNAME = os.environ.get("RENEWAL_USERNAME", "")
@@ -37,12 +35,17 @@ OUTPUT_ROOT = Path("screenshots") / "renewals"   # renewals journey in its own f
 
 # Set HEADED=1 to watch the browser work (useful for debugging a stuck step).
 HEADED = os.environ.get("HEADED") == "1"
+
+# The recording ends by clicking the final SUBMIT button. On the LIVE site that
+# would actually complete the renewal and change the test account's state, which
+# would break the following week's run. So it is OFF by default. Set
+# COMPLETE_RENEWAL=1 only if you deliberately want the script to submit.
+COMPLETE_RENEWAL = os.environ.get("COMPLETE_RENEWAL") == "1"
+
 RUN_DATE    = dt.date.today().isoformat()
 RUN_DIR     = OUTPUT_ROOT / RUN_DATE
 
 
-# --------------------------------------------------------------------------
-# Screenshot helper
 # --------------------------------------------------------------------------
 # Optimizely A/B test detection
 # Reads Optimizely's on-page data layer to find which experiments the visitor
@@ -144,8 +147,8 @@ def goto_with_retry(page, url, attempts=3, pause_ms=6000):
 def accept_cookies(page):
     """Click the cookie banner if it's showing; do nothing if it isn't.
 
-    The banner reappears when moving between the account and renewal
-    subdomains, and sometimes not at all, so this is best-effort.
+    The banner can reappear when moving between pages and sometimes not at all,
+    so this is best-effort and never blocks the journey.
     """
     try:
         page.get_by_role("button", name="Accept All Cookies").click(timeout=4000)
@@ -153,77 +156,82 @@ def accept_cookies(page):
         pass
 
 
-def open_section(page, name):
-    """Expand a section on the renewal summary page.
-
-    Each section has two buttons with the same name - a left-nav link and the
-    accordion control that actually opens the content. We target the accordion
-    control by its stable id prefix so the two never get confused.
-    """
-    page.locator('button[id^="accordion-control-"]', has_text=name).first.click()
-
-
 # --------------------------------------------------------------------------
 # THE RENEWALS JOURNEY  (requires login)
-# Steps recorded from the live UAT site; a screenshot is taken on arrival at
-# each screen. Login comes from environment variables, never hard-coded.
+# Steps are a literal trace of the recorded live journey. A screenshot is taken
+# at each point marked "shotter" in the recording. Login comes from environment
+# variables, never hard-coded.
 # --------------------------------------------------------------------------
 def capture_renewals_journey(shotter):
     page = shotter.page
 
-    # Page 1 - Sign in
+    # Sign in page - fill credentials, screenshot, then sign in
     goto_with_retry(page, SIGNIN_URL)
     accept_cookies(page)
-    shotter.shot("Sign in", "renewal")
     page.get_by_role("textbox", name="Username").click()
     page.get_by_role("textbox", name="Username").fill(USERNAME)
     page.get_by_role("textbox", name="Password").click()
     page.get_by_role("textbox", name="Password").fill(PASSWORD)
+    shotter.shot("Sign in", "renewal")                       # shotter 1
     page.get_by_role("button", name="Sign in").click()
     accept_cookies(page)
 
-    # Page 2 - My account (after login)
-    shotter.shot("My account", "renewal")
+    # Account menu pages
     page.get_by_role("link", name="Renewals").click()
-    accept_cookies(page)
+    shotter.shot("Renewals", "renewal")                      # shotter 2
 
-    # Page 3 - Renewals list
-    shotter.shot("Renewals list", "renewal")
+    page.get_by_role("link", name="Quotes").click()
+    shotter.shot("Quotes", "renewal")                        # shotter 3
+
+    page.get_by_role("link", name="Account Details").click()
+    shotter.shot("Account Details", "renewal")               # shotter 4
+
+    page.get_by_role("link", name="Refer a Friend").click()
+    shotter.shot("Refer a Friend", "renewal")                # shotter 5
+
+    page.get_by_role("link", name="My Messages").click()
+    shotter.shot("My Messages", "renewal")                   # shotter 6
+
+    page.get_by_role("link", name="Policies").click()
+    page.get_by_role("button", name="View my policy").click()
+    shotter.shot("View my policy", "renewal")                # shotter 7
+
+    page.get_by_role("link", name="My Current Policies").click()
+    shotter.shot("My Current Policies", "renewal")           # shotter 8
+
+    page.get_by_role("button", name="My policy documents").click()
+    shotter.shot("My policy documents", "renewal")           # shotter 9
+
+    # Into the renewal itself
+    page.get_by_role("link", name="My Current Policies").click()
     page.get_by_role("link", name="View renewal").click()
-
-    # Page 4 - Renewal agreement
-    shotter.shot("Renewal agreement", "renewal")
     page.get_by_role("button", name="I agree").click()
-    accept_cookies(page)
+    shotter.shot("Renewal summary", "renewal")               # shotter 10
 
-    # Page 5 - Renewal summary, then each section in turn
-    shotter.shot("Renewal summary", "renewal")
-    open_section(page, "Travellers")
-    shotter.shot("Travellers", "renewal")
-    open_section(page, "Medical conditions")
-    shotter.shot("Medical conditions", "renewal")
-    open_section(page, "Policy extras")
-    shotter.shot("Policy extras", "renewal")
-    open_section(page, "Contact details")
-    shotter.shot("Contact details", "renewal")
-    # Move toward the review page. These Continue clicks are best-effort:
-    # the review page is also opened directly by URL just below, so we never
-    # hang here if a Continue button is slow, disabled, or already past.
-    for _ in range(2):
-        try:
-            page.get_by_role("button", name="Continue").click(timeout=6000)
-        except Exception:
-            break
+    # Expand each summary section in turn
+    page.get_by_text("TravellersParty").click()
+    page.get_by_text("Medical conditionsIf any").click()
+    page.get_by_text("Policy extrasThere’s no").click()
+    page.get_by_text("Contact details lucy583@").click()
+    shotter.shot("Renewal sections expanded", "renewal")     # shotter 11
 
-    # Page 6 - Review
-    goto_with_retry(page, REVIEW_URL)
-    shotter.shot("Review", "renewal")
+    page.get_by_role("button", name="Don’t want to renew?").click()
+    shotter.shot("Don't want to renew", "renewal")           # shotter 12
 
-    # NOTE: the final submit is intentionally left OUT. Clicking it would
-    # actually complete the renewal and change the test account's state,
-    # which would break next week's run. Uncomment only if you want it.
-    # page.get_by_test_id("renewal-page-submit-button").click()
-    # shotter.shot("Confirmation", "renewal")
+    page.get_by_test_id("single-type-modal-close-button").click()
+    page.get_by_role("button", name="Continue").click()
+    shotter.shot("Continue", "renewal")                      # shotter 13
+
+    page.get_by_test_id("confirmation-modal-primary-button").click()
+    shotter.shot("Final review", "renewal")                  # shotter 14
+
+    # FINAL SUBMIT - off by default (see COMPLETE_RENEWAL note at top).
+    # Submitting on the live site completes the renewal and would change the
+    # test account's state, breaking next week's run. The page as it sits ready
+    # to submit is already captured above as "Final review".
+    if COMPLETE_RENEWAL:
+        page.get_by_test_id("renewal-page-submit-button").click()
+        shotter.shot("Submitted", "renewal")                 # shotter 15
 
 
 # --------------------------------------------------------------------------
