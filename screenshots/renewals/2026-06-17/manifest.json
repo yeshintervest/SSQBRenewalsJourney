@@ -1,0 +1,20 @@
+[
+  {
+    "order": 1,
+    "section": "renewal",
+    "label": "Sign in",
+    "file": "01_renewal_sign-in.png",
+    "url": "https://myaccount.staysure.uat.staysuregroup.com/signin",
+    "captured_at": "2026-06-17T08:54:31",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "renewal",
+    "label": "STUCK - where it stopped",
+    "file": "02_renewal_stuck---where-it-stopped.png",
+    "url": "https://myaccount.staysure.uat.staysuregroup.com/signin",
+    "captured_at": "2026-06-17T08:55:05",
+    "experiments": []
+  }
+]
