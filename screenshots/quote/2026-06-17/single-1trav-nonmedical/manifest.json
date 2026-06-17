@@ -1,0 +1,333 @@
+[
+  {
+    "order": 1,
+    "section": "quote",
+    "label": "Cover type",
+    "file": "01_quote_cover-type.png",
+    "url": "https://quote.staysure.co.uk/",
+    "captured_at": "2026-06-17T08:35:22",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "quote",
+    "label": "Cover type filled",
+    "file": "02_quote_cover-type-filled.png",
+    "url": "https://quote.staysure.co.uk/",
+    "captured_at": "2026-06-17T08:35:27",
+    "experiments": []
+  },
+  {
+    "order": 3,
+    "section": "quote",
+    "label": "Travelling to",
+    "file": "03_quote_travelling-to.png",
+    "url": "https://quote.staysure.co.uk/",
+    "captured_at": "2026-06-17T08:35:32",
+    "experiments": []
+  },
+  {
+    "order": 4,
+    "section": "quote",
+    "label": "Travelling to filled",
+    "file": "04_quote_travelling-to-filled.png",
+    "url": "https://quote.staysure.co.uk/travelling-to/",
+    "captured_at": "2026-06-17T08:35:38",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "section": "quote",
+    "label": "Cruise",
+    "file": "05_quote_cruise.png",
+    "url": "https://quote.staysure.co.uk/cruise/",
+    "captured_at": "2026-06-17T08:35:43",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "section": "quote",
+    "label": "Cruise filled",
+    "file": "06_quote_cruise-filled.png",
+    "url": "https://quote.staysure.co.uk/cruise/",
+    "captured_at": "2026-06-17T08:35:48",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "section": "quote",
+    "label": "Travel dates",
+    "file": "07_quote_travel-dates.png",
+    "url": "https://quote.staysure.co.uk/travel-dates/",
+    "captured_at": "2026-06-17T08:35:53",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "section": "quote",
+    "label": "Travel dates filled",
+    "file": "08_quote_travel-dates-filled.png",
+    "url": "https://quote.staysure.co.uk/travel-dates/",
+    "captured_at": "2026-06-17T08:36:04",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 9,
+    "section": "quote",
+    "label": "Cover for",
+    "file": "09_quote_cover-for.png",
+    "url": "https://quote.staysure.co.uk/cover-for/",
+    "captured_at": "2026-06-17T08:36:09",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 10,
+    "section": "quote",
+    "label": "Cover for filled",
+    "file": "10_quote_cover-for-filled.png",
+    "url": "https://quote.staysure.co.uk/cover-for/",
+    "captured_at": "2026-06-17T08:36:14",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 11,
+    "section": "quote",
+    "label": "Organiser",
+    "file": "11_quote_organiser.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-06-17T08:36:19",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 12,
+    "section": "quote",
+    "label": "Organiser filled",
+    "file": "12_quote_organiser-filled.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-06-17T08:36:26",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 13,
+    "section": "quote",
+    "label": "Medical confirmation",
+    "file": "13_quote_medical-confirmation.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-06-17T08:36:31",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 14,
+    "section": "quote",
+    "label": "Medical confirmation filled",
+    "file": "14_quote_medical-confirmation-filled.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-06-17T08:36:36",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 15,
+    "section": "quote",
+    "label": "Medical treatments",
+    "file": "15_quote_medical-treatments.png",
+    "url": "https://quote.staysure.co.uk/medical-treatments/",
+    "captured_at": "2026-06-17T08:36:41",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 16,
+    "section": "quote",
+    "label": "Medical treatments filled",
+    "file": "16_quote_medical-treatments-filled.png",
+    "url": "https://quote.staysure.co.uk/medical-treatments/",
+    "captured_at": "2026-06-17T08:36:46",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 17,
+    "section": "quote",
+    "label": "Contact details",
+    "file": "17_quote_contact-details.png",
+    "url": "https://quote.staysure.co.uk/contact-details/",
+    "captured_at": "2026-06-17T08:36:51",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 18,
+    "section": "quote",
+    "label": "Contact details filled",
+    "file": "18_quote_contact-details-filled.png",
+    "url": "https://quote.staysure.co.uk/contact-details/",
+    "captured_at": "2026-06-17T08:36:56",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 19,
+    "section": "quote",
+    "label": "Quote",
+    "file": "19_quote_quote.png",
+    "url": "https://quote.staysure.co.uk/quote/",
+    "captured_at": "2026-06-17T08:37:01",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 20,
+    "section": "quote",
+    "label": "Quote filled",
+    "file": "20_quote_quote-filled.png",
+    "url": "https://quote.staysure.co.uk/quote/",
+    "captured_at": "2026-06-17T08:37:07",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 21,
+    "section": "quote",
+    "label": "Quote review",
+    "file": "21_quote_quote-review.png",
+    "url": "https://quote.staysure.co.uk/quote-review/",
+    "captured_at": "2026-06-17T08:37:12",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 22,
+    "section": "quote",
+    "label": "Payment",
+    "file": "22_quote_payment.png",
+    "url": "https://quote.staysure.co.uk/payment/",
+    "captured_at": "2026-06-17T08:37:17",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  }
+]
