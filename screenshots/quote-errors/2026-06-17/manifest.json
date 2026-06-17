@@ -5,7 +5,7 @@
     "label": "Organiser validation error",
     "file": "01_errors_organiser-validation-error.png",
     "url": "https://quote.staysure.co.uk/organiser/",
-    "captured_at": "2026-06-17T08:53:46",
+    "captured_at": "2026-06-17T17:52:30",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -21,7 +21,7 @@
     "label": "Medical 1",
     "file": "02_errors_medical-1.png",
     "url": "https://quote.staysure.co.uk/medical-confirmation/",
-    "captured_at": "2026-06-17T08:53:57",
+    "captured_at": "2026-06-17T17:52:42",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -37,7 +37,7 @@
     "label": "Medical 2",
     "file": "03_errors_medical-2.png",
     "url": "https://quote.staysure.co.uk/medical-confirmation/",
-    "captured_at": "2026-06-17T08:54:02",
+    "captured_at": "2026-06-17T17:52:47",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -53,7 +53,7 @@
     "label": "Unable to cover",
     "file": "04_errors_unable-to-cover.png",
     "url": "https://quote.staysure.co.uk/unable-to-quote/",
-    "captured_at": "2026-06-17T08:54:23",
+    "captured_at": "2026-06-17T17:53:10",
     "experiments": [
       {
         "experimentId": "5112242610372608",

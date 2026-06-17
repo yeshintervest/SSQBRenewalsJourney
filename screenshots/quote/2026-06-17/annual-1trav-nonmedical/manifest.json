@@ -5,7 +5,7 @@
     "label": "Cover type",
     "file": "01_quote_cover-type.png",
     "url": "https://quote.staysure.co.uk/",
-    "captured_at": "2026-06-17T08:43:28",
+    "captured_at": "2026-06-17T17:43:29",
     "experiments": []
   },
   {
@@ -14,7 +14,7 @@
     "label": "Cover type filled",
     "file": "02_quote_cover-type-filled.png",
     "url": "https://quote.staysure.co.uk/",
-    "captured_at": "2026-06-17T08:43:33",
+    "captured_at": "2026-06-17T17:43:34",
     "experiments": []
   },
   {
@@ -23,7 +23,7 @@
     "label": "Travelling to",
     "file": "03_quote_travelling-to.png",
     "url": "https://quote.staysure.co.uk/travelling-to/",
-    "captured_at": "2026-06-17T08:43:38",
+    "captured_at": "2026-06-17T17:43:39",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -39,7 +39,7 @@
     "label": "Travelling to filled",
     "file": "04_quote_travelling-to-filled.png",
     "url": "https://quote.staysure.co.uk/travelling-to/",
-    "captured_at": "2026-06-17T08:43:44",
+    "captured_at": "2026-06-17T17:43:45",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -55,7 +55,7 @@
     "label": "Cruise",
     "file": "05_quote_cruise.png",
     "url": "https://quote.staysure.co.uk/cruise/",
-    "captured_at": "2026-06-17T08:43:49",
+    "captured_at": "2026-06-17T17:43:50",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -71,7 +71,7 @@
     "label": "Cruise filled",
     "file": "06_quote_cruise-filled.png",
     "url": "https://quote.staysure.co.uk/cruise/",
-    "captured_at": "2026-06-17T08:43:54",
+    "captured_at": "2026-06-17T17:43:55",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -87,7 +87,7 @@
     "label": "Travel dates",
     "file": "07_quote_travel-dates.png",
     "url": "https://quote.staysure.co.uk/travel-dates/",
-    "captured_at": "2026-06-17T08:43:59",
+    "captured_at": "2026-06-17T17:44:00",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -103,7 +103,7 @@
     "label": "Travel dates filled",
     "file": "08_quote_travel-dates-filled.png",
     "url": "https://quote.staysure.co.uk/travel-dates/",
-    "captured_at": "2026-06-17T08:44:04",
+    "captured_at": "2026-06-17T17:44:05",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -119,7 +119,7 @@
     "label": "Cover for",
     "file": "09_quote_cover-for.png",
     "url": "https://quote.staysure.co.uk/cover-for/",
-    "captured_at": "2026-06-17T08:44:09",
+    "captured_at": "2026-06-17T17:44:10",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -135,7 +135,7 @@
     "label": "Cover for filled",
     "file": "10_quote_cover-for-filled.png",
     "url": "https://quote.staysure.co.uk/cover-for/",
-    "captured_at": "2026-06-17T08:44:14",
+    "captured_at": "2026-06-17T17:44:15",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -151,7 +151,7 @@
     "label": "Organiser",
     "file": "11_quote_organiser.png",
     "url": "https://quote.staysure.co.uk/organiser/",
-    "captured_at": "2026-06-17T08:44:19",
+    "captured_at": "2026-06-17T17:44:20",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -167,7 +167,7 @@
     "label": "Organiser filled",
     "file": "12_quote_organiser-filled.png",
     "url": "https://quote.staysure.co.uk/organiser/",
-    "captured_at": "2026-06-17T08:44:27",
+    "captured_at": "2026-06-17T17:44:28",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -183,7 +183,7 @@
     "label": "Medical confirmation",
     "file": "13_quote_medical-confirmation.png",
     "url": "https://quote.staysure.co.uk/medical-confirmation/",
-    "captured_at": "2026-06-17T08:44:32",
+    "captured_at": "2026-06-17T17:44:33",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -199,7 +199,7 @@
     "label": "Medical confirmation filled",
     "file": "14_quote_medical-confirmation-filled.png",
     "url": "https://quote.staysure.co.uk/medical-confirmation/",
-    "captured_at": "2026-06-17T08:44:37",
+    "captured_at": "2026-06-17T17:44:38",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -215,7 +215,7 @@
     "label": "Medical treatments",
     "file": "15_quote_medical-treatments.png",
     "url": "https://quote.staysure.co.uk/medical-treatments/",
-    "captured_at": "2026-06-17T08:44:42",
+    "captured_at": "2026-06-17T17:44:43",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -231,7 +231,7 @@
     "label": "Medical treatments filled",
     "file": "16_quote_medical-treatments-filled.png",
     "url": "https://quote.staysure.co.uk/medical-treatments/",
-    "captured_at": "2026-06-17T08:44:47",
+    "captured_at": "2026-06-17T17:44:48",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -247,7 +247,7 @@
     "label": "Contact details",
     "file": "17_quote_contact-details.png",
     "url": "https://quote.staysure.co.uk/contact-details/",
-    "captured_at": "2026-06-17T08:44:52",
+    "captured_at": "2026-06-17T17:44:53",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -263,7 +263,7 @@
     "label": "Contact details filled",
     "file": "18_quote_contact-details-filled.png",
     "url": "https://quote.staysure.co.uk/contact-details/",
-    "captured_at": "2026-06-17T08:44:57",
+    "captured_at": "2026-06-17T17:44:58",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -279,7 +279,7 @@
     "label": "Quote",
     "file": "19_quote_quote.png",
     "url": "https://quote.staysure.co.uk/quote/",
-    "captured_at": "2026-06-17T08:45:02",
+    "captured_at": "2026-06-17T17:45:03",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -295,7 +295,7 @@
     "label": "Quote filled",
     "file": "20_quote_quote-filled.png",
     "url": "https://quote.staysure.co.uk/quote/",
-    "captured_at": "2026-06-17T08:45:08",
+    "captured_at": "2026-06-17T17:45:11",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -311,7 +311,7 @@
     "label": "Quote review",
     "file": "21_quote_quote-review.png",
     "url": "https://quote.staysure.co.uk/quote-review/",
-    "captured_at": "2026-06-17T08:45:13",
+    "captured_at": "2026-06-17T17:45:16",
     "experiments": [
       {
         "experimentId": "5112242610372608",
@@ -327,7 +327,7 @@
     "label": "Payment",
     "file": "22_quote_payment.png",
     "url": "https://quote.staysure.co.uk/payment/",
-    "captured_at": "2026-06-17T08:45:18",
+    "captured_at": "2026-06-17T17:45:21",
     "experiments": [
       {
         "experimentId": "5112242610372608",

@@ -4,8 +4,8 @@
     "section": "renewal",
     "label": "Sign in",
     "file": "01_renewal_sign-in.png",
-    "url": "https://myaccount.staysure.uat.staysuregroup.com/signin",
-    "captured_at": "2026-06-17T08:54:31",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-06-17T17:53:19",
     "experiments": []
   },
   {
@@ -13,8 +13,8 @@
     "section": "renewal",
     "label": "STUCK - where it stopped",
     "file": "02_renewal_stuck---where-it-stopped.png",
-    "url": "https://myaccount.staysure.uat.staysuregroup.com/signin",
-    "captured_at": "2026-06-17T08:55:05",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-06-17T17:54:00",
     "experiments": []
   }
 ]
