@@ -1,0 +1,29 @@
+[
+  {
+    "order": 1,
+    "section": "renewal",
+    "label": "Sign in",
+    "file": "01_renewal_sign-in.png",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-06-18T04:56:16",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "renewal",
+    "label": "My account",
+    "file": "02_renewal_my-account.png",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-06-18T04:56:27",
+    "experiments": []
+  },
+  {
+    "order": 3,
+    "section": "renewal",
+    "label": "STUCK - where it stopped",
+    "file": "03_renewal_stuck---where-it-stopped.png",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-06-18T04:57:02",
+    "experiments": []
+  }
+]

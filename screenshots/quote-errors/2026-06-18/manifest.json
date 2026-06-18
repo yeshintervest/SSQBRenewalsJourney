@@ -1,0 +1,34 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-06-18T04:55:29",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "STUCK - where it stopped",
+    "file": "02_errors_stuck---where-it-stopped.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-06-18T04:56:07",
+    "experiments": [
+      {
+        "experimentId": "5112242610372608",
+        "experiment": "SST - 8353 | Middle east message (Cyprus & Saudi Arabia)",
+        "variation": "Variation #1",
+        "variationId": "4560700358524928"
+      }
+    ]
+  }
+]
