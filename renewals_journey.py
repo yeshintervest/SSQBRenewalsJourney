@@ -198,6 +198,7 @@ def capture_renewals_journey(shotter):
     shotter.shot("Renewal summary", "renewal")
 
     # Info pop-ups, each closed with Cancel
+    shotter.shot("Full details policy", "renewal")
     page.get_by_role("button", name="More info").click()
     shotter.shot("More info", "renewal")
     page.get_by_role("button", name="Cancel").click()
