@@ -1,0 +1,50 @@
+name: Renewals only (manual)
+
+# No schedule - this only runs when you click "Run workflow" in the Actions tab.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Capture renewals journey
+        continue-on-error: true
+        env:
+          RENEWAL_USERNAME: ${{ secrets.RENEWAL_USERNAME }}
+          RENEWAL_PASSWORD: ${{ secrets.RENEWAL_PASSWORD }}
+        run: python renewals_journey.py
+
+      - name: Save screenshots back to the repo
+        if: always()
+        run: |
+          git config user.name "screenshot-bot"
+          git config user.email "screenshot-bot@users.noreply.github.com"
+          git add screenshots
+          git commit -m "Renewals test run $(date +%F)" || { echo "nothing new"; exit 0; }
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "pushed on attempt $attempt"
+              break
+            fi
+            echo "push attempt $attempt failed - retrying in 5s..."
+            sleep 5
+          done
