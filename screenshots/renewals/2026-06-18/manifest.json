@@ -5,7 +5,7 @@
     "label": "Sign in",
     "file": "01_renewal_sign-in.png",
     "url": "https://my.staysure.co.uk/signin",
-    "captured_at": "2026-06-18T05:12:44",
+    "captured_at": "2026-06-18T07:31:00",
     "experiments": []
   },
   {
@@ -14,7 +14,7 @@
     "label": "My account",
     "file": "02_renewal_my-account.png",
     "url": "https://my.staysure.co.uk/my-insurance",
-    "captured_at": "2026-06-18T05:12:54",
+    "captured_at": "2026-06-18T07:31:11",
     "experiments": [
       {
         "experimentId": "29613730032",
@@ -36,7 +36,7 @@
     "label": "Renewals list",
     "file": "03_renewal_renewals-list.png",
     "url": "https://my.staysure.co.uk/my-renewals",
-    "captured_at": "2026-06-18T05:13:00",
+    "captured_at": "2026-06-18T07:31:16",
     "experiments": [
       {
         "experimentId": "29613730032",
@@ -58,7 +58,7 @@
     "label": "Renewal agreement",
     "file": "04_renewal_renewal-agreement.png",
     "url": "https://my.staysure.co.uk/my-renewals",
-    "captured_at": "2026-06-18T05:13:05",
+    "captured_at": "2026-06-18T07:31:21",
     "experiments": [
       {
         "experimentId": "29613730032",
@@ -79,8 +79,8 @@
     "section": "renewal",
     "label": "Renewal summary",
     "file": "05_renewal_renewal-summary.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:10",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:26",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -91,18 +91,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 6,
     "section": "renewal",
-    "label": "More info",
-    "file": "06_renewal_more-info.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:17",
+    "label": "Full details policy",
+    "file": "06_renewal_full-details-policy.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:31",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -113,18 +113,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 7,
     "section": "renewal",
-    "label": "Why has my price increased",
-    "file": "07_renewal_why-has-my-price-increased.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:23",
+    "label": "More info",
+    "file": "07_renewal_more-info.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:36",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -135,18 +135,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 8,
     "section": "renewal",
-    "label": "Policy details",
-    "file": "08_renewal_policy-details.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:29",
+    "label": "Why has my price increased",
+    "file": "08_renewal_why-has-my-price-increased.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:42",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -157,18 +157,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 9,
     "section": "renewal",
-    "label": "Travellers",
-    "file": "09_renewal_travellers.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:34",
+    "label": "Policy details",
+    "file": "09_renewal_policy-details.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:48",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -179,18 +179,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 10,
     "section": "renewal",
-    "label": "Medical conditions",
-    "file": "10_renewal_medical-conditions.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:39",
+    "label": "Travellers",
+    "file": "10_renewal_travellers.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:53",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -201,18 +201,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 11,
     "section": "renewal",
-    "label": "Policy extras",
-    "file": "11_renewal_policy-extras.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:44",
+    "label": "Medical conditions",
+    "file": "11_renewal_medical-conditions.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:31:59",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -223,18 +223,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 12,
     "section": "renewal",
-    "label": "Contact details",
-    "file": "12_renewal_contact-details.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:49",
+    "label": "Policy extras",
+    "file": "12_renewal_policy-extras.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:32:04",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -245,18 +245,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 13,
     "section": "renewal",
-    "label": "Continue",
-    "file": "13_renewal_continue.png",
-    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*jez6dd*_gcl_au*MTY4Njc0MDY1MS4xNzgxNzU5NTU5LjE5NDQ5OTE5MDIuMTc4MTc1OTU2MC4xNzgxNzU5NTY0*_ga*MTcyODUzNzMwLjE3ODE3NTk1NTk.*_ga_RR232R3VD2*czE3ODE3NTk1NTgkbzEkZzEkdDE3ODE3NTk1NzYkajQzJGwwJGgwJGQwdkRXU2J4N3ZnNUpMZWdTbWEyNlNjT05hMDRYZnVyM2JB*_fplc*Rlh2WnRCZ0MyT2gyalFNcERHODlXakVLM0VUWFVXaTclMkZMUzFRM3N3JTJCJTJGQXBET05pUHRKSmYlMkZRWHElMkZBU2hncHZpUzZnTzBBYkw5T1RYb01IVjJhWWhrQSUyQmVtT2k1MWpzdW8lMkJWZ0FabTlGR1lCZjR1RmJEVVRsMkhRdCUyQmElMkZnJTNEJTNE",
-    "captured_at": "2026-06-18T05:13:54",
+    "label": "Contact details",
+    "file": "13_renewal_contact-details.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:32:09",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -267,18 +267,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 14,
     "section": "renewal",
-    "label": "Confirmation",
-    "file": "14_renewal_confirmation.png",
-    "url": "https://renewals.staysure.co.uk/review/",
-    "captured_at": "2026-06-18T05:13:59",
+    "label": "Continue",
+    "file": "14_renewal_continue.png",
+    "url": "https://renewals.staysure.co.uk/?affiliate=renewal&quoteId=52e1dc76a840c6e6e5f6fd58ebecaffc9f5fec96a04c0419b9943e16e88c5ba4&_gl=1*3ykfop*_gcl_au*MjAxMDM0NTA2MS4xNzgxNzY3ODU1LjkxMjQzMzkwOC4xNzgxNzY3ODU2LjE3ODE3Njc4NjA.*_ga*MTEyNDU5NzMwNi4xNzgxNzY3ODU0*_ga_RR232R3VD2*czE3ODE3Njc4NTQkbzEkZzEkdDE3ODE3Njc4NzIkajQzJGwwJGgwJGRmSFBhYW9VcFdFUnA1ai02UFVZZC1EU3dTcHk4UXIwZDJn*_fplc*V0RldzY4b0tVcnZTOEpFNGZPMzdVQ2hBS0FXWUx2QzkwOURtTmJkTXVwUCUyQms2d3ElMkZjS3Vyc2c1a0FzRzl0cEdrY1hROHhnaElvejF3R2lpUzBDMjc1a1VVbHRDODN0eSUyQkZFdmlLOVQlMkZoV1pGRnNWM01lR05QU01peGd2Q1ElM0QlM0Q.",
+    "captured_at": "2026-06-18T07:32:14",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -289,18 +289,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 15,
     "section": "renewal",
-    "label": "Contact preferences",
-    "file": "15_renewal_contact-preferences.png",
+    "label": "Confirmation",
+    "file": "15_renewal_confirmation.png",
     "url": "https://renewals.staysure.co.uk/review/",
-    "captured_at": "2026-06-18T05:14:04",
+    "captured_at": "2026-06-18T07:32:19",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -311,18 +311,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 16,
     "section": "renewal",
-    "label": "Renewal expanded",
-    "file": "16_renewal_renewal-expanded.png",
+    "label": "Contact preferences",
+    "file": "16_renewal_contact-preferences.png",
     "url": "https://renewals.staysure.co.uk/review/",
-    "captured_at": "2026-06-18T05:14:09",
+    "captured_at": "2026-06-18T07:32:24",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -333,18 +333,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 17,
     "section": "renewal",
-    "label": "Final review",
-    "file": "17_renewal_final-review.png",
-    "url": "https://renewals.staysure.co.uk/payment-summary/",
-    "captured_at": "2026-06-18T05:14:14",
+    "label": "Renewal expanded",
+    "file": "17_renewal_renewal-expanded.png",
+    "url": "https://renewals.staysure.co.uk/review/",
+    "captured_at": "2026-06-18T07:32:29",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -355,18 +355,18 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
-        "variation": "Original",
-        "variationId": "6542892240470016"
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   },
   {
     "order": 18,
     "section": "renewal",
-    "label": "Monthly payment",
-    "file": "18_renewal_monthly-payment.png",
+    "label": "Final review",
+    "file": "18_renewal_final-review.png",
     "url": "https://renewals.staysure.co.uk/payment-summary/",
-    "captured_at": "2026-06-18T05:14:19",
+    "captured_at": "2026-06-18T07:32:34",
     "experiments": [
       {
         "experimentId": "6413413295849472",
@@ -377,8 +377,30 @@
       {
         "experimentId": "5480773470388224",
         "experiment": "SST-8743 | Renewals dashboard - All cover level section",
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
+      }
+    ]
+  },
+  {
+    "order": 19,
+    "section": "renewal",
+    "label": "Monthly payment",
+    "file": "19_renewal_monthly-payment.png",
+    "url": "https://renewals.staysure.co.uk/payment-summary/",
+    "captured_at": "2026-06-18T07:32:39",
+    "experiments": [
+      {
+        "experimentId": "6413413295849472",
+        "experiment": "SST-7248 | Renewals dashboard - Cover level section",
         "variation": "Original",
-        "variationId": "6542892240470016"
+        "variationId": "6707560439349248"
+      },
+      {
+        "experimentId": "5480773470388224",
+        "experiment": "SST-8743 | Renewals dashboard - All cover level section",
+        "variation": "Variation #1",
+        "variationId": "4947559588823040"
       }
     ]
   }
