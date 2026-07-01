@@ -1,0 +1,55 @@
+[
+  {
+    "order": 1,
+    "section": "renewal",
+    "label": "Sign in",
+    "file": "01_renewal_sign-in.png",
+    "url": "https://my.staysure.co.uk/signin",
+    "captured_at": "2026-07-01T14:08:08",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "renewal",
+    "label": "My account",
+    "file": "02_renewal_my-account.png",
+    "url": "https://my.staysure.co.uk/my-insurance",
+    "captured_at": "2026-07-01T14:08:18",
+    "experiments": [
+      {
+        "experimentId": "29613730032",
+        "experiment": "[SL] Deflect calls to agents",
+        "variation": "Variation #1",
+        "variationId": "29600740017"
+      },
+      {
+        "experimentId": "30028380155",
+        "experiment": "#301 - No Change Renewal Journey \u2014 Audience Prep",
+        "variation": "Variation #1",
+        "variationId": "30039440147"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "section": "renewal",
+    "label": "STUCK - where it stopped",
+    "file": "03_renewal_stuck---where-it-stopped.png",
+    "url": "https://my.staysure.co.uk/my-insurance",
+    "captured_at": "2026-07-01T14:08:53",
+    "experiments": [
+      {
+        "experimentId": "29613730032",
+        "experiment": "[SL] Deflect calls to agents",
+        "variation": "Variation #1",
+        "variationId": "29600740017"
+      },
+      {
+        "experimentId": "30028380155",
+        "experiment": "#301 - No Change Renewal Journey \u2014 Audience Prep",
+        "variation": "Variation #1",
+        "variationId": "30039440147"
+      }
+    ]
+  }
+]
