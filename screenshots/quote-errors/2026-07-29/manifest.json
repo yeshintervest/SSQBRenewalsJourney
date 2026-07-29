@@ -1,0 +1,34 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-07-29T09:04:19",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Original",
+        "variationId": "4937541181243392"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "STUCK - where it stopped",
+    "file": "02_errors_stuck---where-it-stopped.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-07-29T09:04:57",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Original",
+        "variationId": "4937541181243392"
+      }
+    ]
+  }
+]
