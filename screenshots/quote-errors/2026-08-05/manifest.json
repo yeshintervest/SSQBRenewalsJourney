@@ -1,0 +1,66 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-08-05T08:49:59",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Variation #1",
+        "variationId": "6345080850612224"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "Medical 1",
+    "file": "02_errors_medical-1.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-08-05T08:50:09",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Variation #1",
+        "variationId": "6345080850612224"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "section": "errors",
+    "label": "Medical 2",
+    "file": "03_errors_medical-2.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-08-05T08:50:14",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Variation #1",
+        "variationId": "6345080850612224"
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "section": "errors",
+    "label": "Unable to cover",
+    "file": "04_errors_unable-to-cover.png",
+    "url": "https://quote.staysure.co.uk/unable-to-quote/",
+    "captured_at": "2026-08-05T08:50:39",
+    "experiments": [
+      {
+        "experimentId": "4653004295503872",
+        "experiment": "SST-9086 | promotional sales banner - results page",
+        "variation": "Variation #1",
+        "variationId": "6345080850612224"
+      }
+    ]
+  }
+]
