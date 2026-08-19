@@ -1,0 +1,38 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-08-19T06:58:45",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "Medical 1",
+    "file": "02_errors_medical-1.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-08-19T06:58:56",
+    "experiments": []
+  },
+  {
+    "order": 3,
+    "section": "errors",
+    "label": "Medical 2",
+    "file": "03_errors_medical-2.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-08-19T06:59:01",
+    "experiments": []
+  },
+  {
+    "order": 4,
+    "section": "errors",
+    "label": "Unable to cover",
+    "file": "04_errors_unable-to-cover.png",
+    "url": "https://quote.staysure.co.uk/unable-to-quote/",
+    "captured_at": "2026-08-19T06:59:22",
+    "experiments": []
+  }
+]
