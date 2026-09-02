@@ -1,0 +1,66 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-09-02T11:03:34",
+    "experiments": [
+      {
+        "experimentId": "4682045958389760",
+        "experiment": "SST-9597 | promotional sales banner (2nd Summer Sale) - results page",
+        "variation": "Variation #1",
+        "variationId": "6510379092672512"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "Medical 1",
+    "file": "02_errors_medical-1.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-09-02T11:03:45",
+    "experiments": [
+      {
+        "experimentId": "4682045958389760",
+        "experiment": "SST-9597 | promotional sales banner (2nd Summer Sale) - results page",
+        "variation": "Variation #1",
+        "variationId": "6510379092672512"
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "section": "errors",
+    "label": "Medical 2",
+    "file": "03_errors_medical-2.png",
+    "url": "https://quote.staysure.co.uk/medical-confirmation/",
+    "captured_at": "2026-09-02T11:03:50",
+    "experiments": [
+      {
+        "experimentId": "4682045958389760",
+        "experiment": "SST-9597 | promotional sales banner (2nd Summer Sale) - results page",
+        "variation": "Variation #1",
+        "variationId": "6510379092672512"
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "section": "errors",
+    "label": "Unable to cover",
+    "file": "04_errors_unable-to-cover.png",
+    "url": "https://quote.staysure.co.uk/unable-to-quote/",
+    "captured_at": "2026-09-02T11:04:14",
+    "experiments": [
+      {
+        "experimentId": "4682045958389760",
+        "experiment": "SST-9597 | promotional sales banner (2nd Summer Sale) - results page",
+        "variation": "Variation #1",
+        "variationId": "6510379092672512"
+      }
+    ]
+  }
+]
