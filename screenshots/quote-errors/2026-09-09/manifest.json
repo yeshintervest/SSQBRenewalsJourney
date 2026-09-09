@@ -1,0 +1,20 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-09-09T11:04:10",
+    "experiments": []
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "STUCK - where it stopped",
+    "file": "02_errors_stuck---where-it-stopped.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-09-09T11:04:45",
+    "experiments": []
+  }
+]
