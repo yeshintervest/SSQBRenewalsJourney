@@ -1,0 +1,34 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-09-23T11:09:32",
+    "experiments": [
+      {
+        "experimentId": "6611187612254208",
+        "experiment": "SST-9583 | 12 for 10 AMT sales banner",
+        "variation": "Variation #1",
+        "variationId": "5829413655281664"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "STUCK - where it stopped",
+    "file": "02_errors_stuck---where-it-stopped.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-09-23T11:10:03",
+    "experiments": [
+      {
+        "experimentId": "6611187612254208",
+        "experiment": "SST-9583 | 12 for 10 AMT sales banner",
+        "variation": "Variation #1",
+        "variationId": "5829413655281664"
+      }
+    ]
+  }
+]
