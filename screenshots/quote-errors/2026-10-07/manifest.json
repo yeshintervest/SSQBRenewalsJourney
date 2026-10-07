@@ -1,0 +1,46 @@
+[
+  {
+    "order": 1,
+    "section": "errors",
+    "label": "Organiser validation error",
+    "file": "01_errors_organiser-validation-error.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-10-07T13:01:13",
+    "experiments": [
+      {
+        "experimentId": "5636528915873792",
+        "experiment": "SST-9017-Go-TO-Medical-Dashboard-Always",
+        "variation": "Variation #1",
+        "variationId": "5331597417775104"
+      },
+      {
+        "experimentId": "6170684710191104",
+        "experiment": "SST-8999-AMT upsell",
+        "variation": "V2: Cover Type selection ST to AMT modal shown",
+        "variationId": "5566740015349760"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "section": "errors",
+    "label": "STUCK - where it stopped",
+    "file": "02_errors_stuck---where-it-stopped.png",
+    "url": "https://quote.staysure.co.uk/organiser/",
+    "captured_at": "2026-10-07T13:01:48",
+    "experiments": [
+      {
+        "experimentId": "5636528915873792",
+        "experiment": "SST-9017-Go-TO-Medical-Dashboard-Always",
+        "variation": "Variation #1",
+        "variationId": "5331597417775104"
+      },
+      {
+        "experimentId": "6170684710191104",
+        "experiment": "SST-8999-AMT upsell",
+        "variation": "V2: Cover Type selection ST to AMT modal shown",
+        "variationId": "5566740015349760"
+      }
+    ]
+  }
+]
